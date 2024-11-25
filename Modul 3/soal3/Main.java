@@ -27,7 +27,7 @@ public class Main {
                     System.out.print("Masukkan NIM Mahasiswa (harus unik): ");
                     String nim = sc.nextLine();
                     daftarMahasiswa.add(new Mahasiswa(nama, nim));
-                    System.out.println("Mahasiswa berhasil ditambahkan.");
+                    System.out.println( "Mahasiswa " + nama + " berhasil ditambahkan.");
                     break;
 
                 case 2: // Hapus Mahasiswa
@@ -75,7 +75,7 @@ public class Main {
                     } else {
                         System.out.println("Daftar Mahasiswa:");
                         for (Mahasiswa mhs : daftarMahasiswa) {
-                            System.out.println("Nama: " + mhs.getNama() + ", NIM: " + mhs.getNim());
+                            System.out.println("NIM: " + mhs.getNim() + ", Nama: " + mhs.getNama());
                         }
                     }
                     break;
